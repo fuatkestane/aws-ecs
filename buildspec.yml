@@ -15,7 +15,6 @@ phases:
       - IMAGE_TAG=${COMMIT_HASH:=latest}
   build:
     commands:
-      - rm env.json
       - echo Build started on `date`
       - echo Building the Docker image...
       - echo $REPOSITORY_URI
